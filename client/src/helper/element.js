@@ -228,7 +228,7 @@ export function saveElements(elements) {
   const url = URL.createObjectURL(blob);
 
   const link = document.createElement("a");
-  link.download = "canvas.sketchFlow";
+  link.download = "canvas.Sketchify";
   link.href = url;
   link.click();
 }
