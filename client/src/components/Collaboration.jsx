@@ -58,7 +58,7 @@ function CreateSession({ startSession }) {
       <div>
         <p>Invite people to collaborate on your drawing.</p>
         <p>
-          Don't worry, the session is end-to-end encrypted, and fully private.
+          Don&apos;t worry, the session is end-to-end encrypted, and fully private.
           Not even our server can see what you draw.
         </p>
       </div>
