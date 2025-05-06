@@ -1,10 +1,10 @@
-import { Github } from "../assets/icons";
+import { WebPortfolio } from "../assets/icons";
 
 export default function Credits() {
   return (
     <section className="credits">
-      <a href="https://github.com/zakaria-tl" id="credits">
-        <Github /> Created by KYROS
+      <a href="https://www.harshthakur.xyz/" id="credits" target="_blank" rel="noopener noreferrer">
+        <WebPortfolio /> Created by Harsh
       </a>
     </section>
   );

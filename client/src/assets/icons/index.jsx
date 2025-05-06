@@ -353,3 +353,33 @@ export const Github = () => (
     <path d="M9.25 19.503c-5 1.498-5-2.496-7-2.996" />
   </svg>
 );
+
+export const WebPortfolio = () => (
+  <svg
+    height={20}
+    width={20}
+    fill="none"
+    stroke="currentColor"
+    strokeLinecap="round"
+    strokeLinejoin="round"
+    strokeWidth={2}
+    viewBox="0 0 24 24"
+  >
+    {/* Browser window frame */}
+    <rect x="2" y="3" width="20" height="18" rx="2" ry="2" />
+    
+    {/* Browser top bar */}
+    <line x1="2" y1="7" x2="22" y2="7" />
+    
+    {/* Browser dots */}
+    <circle cx="5" cy="5" r="0.5" />
+    <circle cx="8" cy="5" r="0.5" />
+    <circle cx="11" cy="5" r="0.5" />
+    
+    {/* Profile icon */}
+    <circle cx="12" cy="12" r="3" />
+    <path d="M12 16c-2.67 0-5 1-5 3v1h10v-1c0-2-2.33-3-5-3z" />
+  </svg>
+);
+
+

@@ -35,7 +35,7 @@ export default function Collaboration() {
         className={"collaborateButton" + `${session ? " active" : ""}`}
         onClick={() => setOpen(true)}
       >
-        Share
+        Live Share
       </button>
 
       {open && (
