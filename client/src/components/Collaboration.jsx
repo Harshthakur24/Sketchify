@@ -4,6 +4,7 @@ import { useState } from "react";
 import { useAppContext } from "../provider/AppStates";
 import { v4 as uuid } from "uuid";
 import { useSearchParams } from "react-router-dom";
+import PropTypes from "prop-types";
 import { socket } from "../api/socket";
 
 export default function Collaboration() {
@@ -67,6 +68,10 @@ function CreateSession({ startSession }) {
   );
 }
 
+CreateSession.propTypes = {
+  startSession: PropTypes.func.isRequired,
+};
+
 function SessionInfo({ endSession }) {
   const copy = () => {
     navigator.clipboard.writeText(window.location.href);
@@ -99,8 +104,12 @@ function SessionInfo({ endSession }) {
   );
 }
 
+SessionInfo.propTypes = {
+  endSession: PropTypes.func.isRequired,
+};
+
 function CollabBox({ collabState, children }) {
-  const [Open, setOpen] = collabState;
+  const [, setOpen] = collabState;
   const exit = () => setOpen(false);
 
   return (
@@ -127,3 +136,8 @@ function CollabBox({ collabState, children }) {
     </div>
   );
 }
+
+CollabBox.propTypes = {
+  collabState: PropTypes.array.isRequired,
+  children: PropTypes.node
+};
