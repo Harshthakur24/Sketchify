@@ -1,6 +1,8 @@
 {
+  "private": true,
   "scripts": {
-    "client": "npm --prefix client run dev",
-    "server": "npm --prefix server run dev"
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview"
   }
 }
